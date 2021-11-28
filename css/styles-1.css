@@ -220,6 +220,8 @@ address {
   margin: 0 13px 28px 13px;
   flex-basis: calc(100% / 3 - 30px);
   border: 1px solid #ececec;
+  transition: background-color 200ms linear, box-shadow 200ms linear;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .products-item-1:hover,
