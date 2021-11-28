@@ -230,11 +230,33 @@ address {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+.products-item-1:hover .products-top {
+  transform: translateY(0);
+}
 button:active,
 button:hover,
 button:focus {
   cursor: pointer;
   background: var(--second-button-color);
+}
+
+.products-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.products-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 1.56;
+  padding: 63px 24px;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: transform 200ms;
 }
 
 .photo-text {
