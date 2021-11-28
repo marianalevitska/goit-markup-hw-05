@@ -354,6 +354,8 @@ footer {
   align-items: center;
   justify-content: center;
   background-color: var(--social-icon-color);
+  transition: background-color 200ms linear, color 200ms linear;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social-icon {
   fill: var(--third-text-color);
