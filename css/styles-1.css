@@ -119,6 +119,17 @@ address {
   color: var(--first-text-color);
   transition: color 200ms linear;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+.header-link.current::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: -32px;
 }
 .header-link:hover,
 .header-link:focus {
