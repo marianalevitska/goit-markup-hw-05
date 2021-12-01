@@ -609,6 +609,10 @@ button:hover {
   position: fixed;
   top: 0;
   left: 0;
+  transition: opacity 200ms, visibility 200ms;
+}
+.backdrop.is-hidden .modal {
+  transform: scale(1.5);
 }
 .modal {
   width: 528px;
@@ -618,7 +622,8 @@ button:hover {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: scale(1) translate(-50%, -50%);
+  transition: transform 200ms;
 }
 .modal-close {
   position: absolute;
@@ -632,5 +637,11 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11 */
