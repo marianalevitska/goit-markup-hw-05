@@ -364,6 +364,9 @@ button:hover {
   border-radius: 0px 0px 4px 4px;
   background-color: #fff;
 }
+.team-member:last-child {
+  margin-right: 0;
+}
 
 .h2 {
   font-weight: 700;
